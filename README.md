@@ -66,9 +66,30 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 
 
 
-
-
-
+vagrantfile->ansible-conroller->terminal
+1.vagrant init centos/7
+2. vagrant provision
+3.vagrant ssh
+4.ls
+5. cd ansible-project
+6.ls
+7.vi playbook.yml
+8.exit
+9.cd ansible-hosts
+10. vagrant init centos/7
+11.vagrant provision
+12.vagrant status
+13.vagrant ssh
+14.vagrant ssh web
+15.exit
+16.vagrant ssh db
+17.exit
+18.vagrant satus
+19. cd ..
+20.vagrant ssh
+21. cd ansible-project
+22.ansible all -m ping -i hosts
+23.ansible-playbook -i hosts playbook.yml
 
 
 
